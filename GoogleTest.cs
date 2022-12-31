@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 using Xunit;
 
 public class GoogleTest : IDisposable {
-    IWebDriver? Driver = null;
+    IWebDriver Driver;
     public GoogleTest() {
         Driver = new ChromeDriver();
     }
@@ -12,16 +12,31 @@ public class GoogleTest : IDisposable {
     public void Dispose() {
         if (Driver != null) {
             Driver.Quit();
-            Driver = null;
+            //Driver = null;
         }
     }
 
     [Fact]
     public void VerifyGoogleSite() {
-        // Act
+        /* Acesso ao site do Google */
         Driver.Navigate().GoToUrl("https://www.google.com");
 
-        // Assert
+        /* Verificar o título do site */
         Assert.Contains("Google", Driver.Title);
+    }
+
+    [Fact]
+    public void SearchDogImage() {
+        /* Acesso ao site do Google */
+        Driver.Navigate().GoToUrl("https://www.google.com/");
+
+        /* Insere o termo de busca */
+        Driver.FindElement(By.Name("q")).SendKeys("Cachorro");
+
+        /* Aciona a busca */
+        Driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        /* Clique na aba de imagens */
+        Driver.FindElement(By.LinkText("Imagens")).Click();
     }
 }
