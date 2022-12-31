@@ -4,39 +4,132 @@ using OpenQA.Selenium.Chrome;
 using Xunit;
 
 public class GoogleTest : IDisposable {
-    IWebDriver Driver;
+    IWebDriver driver;
     public GoogleTest() {
-        Driver = new ChromeDriver();
+        driver = new ChromeDriver();
     }
 
     public void Dispose() {
-        if (Driver != null) {
-            Driver.Quit();
-            //Driver = null;
+        if (driver != null) {
+            driver.Quit();
         }
     }
 
     [Fact]
-    public void VerifyGoogleSite() {
-        /* Acesso ao site do Google */
-        Driver.Navigate().GoToUrl("https://www.google.com");
+    public void Access_Google_OpenGoogle() {
+        Console.WriteLine("Teste 1: Simples acesso ao site do Google");
+        
+        // Arrange: Definição do domínio
+        var googleUrl = new String("https://www.google.com.br");
 
-        /* Verificar o título do site */
-        Assert.Contains("Google", Driver.Title);
+        // Act: Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Assert: Google está contido no título da página
+        Assert.Contains("Google", driver.Title);
     }
 
     [Fact]
-    public void SearchDogImage() {
-        /* Acesso ao site do Google */
-        Driver.Navigate().GoToUrl("https://www.google.com/");
+    public void Search_DogImages_ShowDogImages() {
+        Console.WriteLine("Teste 2: Busca por imagens de cachorros");
 
-        /* Insere o termo de busca */
-        Driver.FindElement(By.Name("q")).SendKeys("Cachorro");
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("Cachorro");
+        var searchTerm = new String("Cachorro");
+        var googleSection = new String("Imagens");
 
-        /* Aciona a busca */
-        Driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
 
-        /* Clique na aba de imagens */
-        Driver.FindElement(By.LinkText("Imagens")).Click();
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Clique na aba de imagens
+        driver.FindElement(By.LinkText(googleSection)).Click();
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
+
+    [Fact]
+    public void Search_Stock_ShowStockDetails() {
+        Console.WriteLine("Teste 3: Busca por ação do Itaú");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("Itaú Unibanco");
+        var searchTerm = new String("ITUB4");
+        var googleSection = new String("Finanças");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Clique na aba de finanças
+        driver.FindElement(By.LinkText(googleSection)).Click();
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
+
+    [Fact]
+    public void Search_BrazilNews_ShowPopularNews() {
+        Console.WriteLine("Teste 4: Busca por notícias do Brasil");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("Brasil");
+        var searchTerm = new String("Brasil");
+        var googleSection = new String("Notícias");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Clique na aba de notícias
+        driver.FindElement(By.LinkText(googleSection)).Click();
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
+
+    [Fact]
+    public void Search_Lyrics_ShowSongLyrics() {
+        Console.WriteLine("Teste 5: Busca por letra de música");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("letra de john mayer neon");
+        var searchTerm = new String("letra de john mayer neon");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
     }
 }
