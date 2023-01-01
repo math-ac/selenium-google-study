@@ -3,7 +3,6 @@
 Utilização do [.NET](https://dotnet.microsoft.com/pt-br/) em junção com [Selenium](https://www.selenium.dev/) para automatização da página do [Google](https://google.com).
 
 ## Detalhes Técnicos
----
 
 - .NET 7.0
 - Selenium 4.7
@@ -12,7 +11,6 @@ Utilização do [.NET](https://dotnet.microsoft.com/pt-br/) em junção com [Sel
 - Opensuse Tumbleweed
 
 ## Preparação do Ambiente
----
 
 Obtenha a versão mais recente do [.NET](https://dotnet.microsoft.com/pt-br/download) disponível para o sistema. A Microsoft possui uma [documentação](https://learn.microsoft.com/pt-br/dotnet/core/install/) bem elaborada, atendendo uma alta gama de sistemas (Linux, Windows e macOS). O sistema utilizado foi o [Opensuse Tumbleweed](https://www.opensuse.org/#Tumbleweed), mas os passos podem ser reproduzidos em outros sistemas.
 
@@ -54,7 +52,6 @@ dotnet add package Selenium.WebDriver
 Adicionalmente, é necessário obter o driver para o navegador que se deseja automatizar. Neste projeto foi utilizado o Chromium, que requer o [chromedriver](https://chromedriver.chromium.org/home), que foi obtido através do repositório oficial do Opensuse. Para utilização com outros navegadores e/ou sistemas, é recomendada a leitura da [documentação oficial](https://www.selenium.dev/pt-br/documentation/webdriver/getting_started/install_drivers/) do Selenium. Após isso, o desenvolvimento pode ser iniciado.
 
 ## Utilização
----
 
 Para reprodução dos testes deste repositório, tendo preparado o ambiente, clone o projeto:
 
@@ -69,7 +66,6 @@ dotnet test
 ```
 
 ## Análise de Usabilidade
----
 
 Com a automação de diferentes buscas, pode-se ter avaliar a usabilidade que a busca do Gooogle oferece. As buscas efetuadas foram:
 
