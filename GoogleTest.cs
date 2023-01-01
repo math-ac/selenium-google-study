@@ -181,7 +181,7 @@ public class GoogleTest : IDisposable {
 
     [Fact]
     public void Search_Pizzarias_ShowNearPizzarias() {
-        Console.WriteLine("Teste 7: Busca pelo clima do RJ");
+        Console.WriteLine("Teste 8: Busca por pizzarias");
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
