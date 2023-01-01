@@ -155,4 +155,27 @@ public class GoogleTest : IDisposable {
         // Assert
         Assert.Contains(assertPageTitle, driver.Title);
     }
+
+    [Fact]
+    public void Search_Weather_ShowWheaterInfo() {
+        Console.WriteLine("Teste 7: Busca pelo clima do RJ");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("tempo rio de janeiro");
+        var searchTerm = new String("tempo rio de janeiro");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
 }
