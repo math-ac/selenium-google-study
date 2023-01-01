@@ -132,4 +132,27 @@ public class GoogleTest : IDisposable {
         // Assert
         Assert.Contains(assertPageTitle, driver.Title);
     }
+
+    [Fact]
+    public void Search_CountryAge_ShowCountryAge() {
+        Console.WriteLine("Teste 6: Busca pela idade do Brasil");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("quantos anos tem o brasil");
+        var searchTerm = new String("quantos anos tem o brasil");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
 }
