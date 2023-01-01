@@ -178,4 +178,31 @@ public class GoogleTest : IDisposable {
         // Assert
         Assert.Contains(assertPageTitle, driver.Title);
     }
+
+    [Fact]
+    public void Search_Pizzarias_ShowNearPizzarias() {
+        Console.WriteLine("Teste 7: Busca pelo clima do RJ");
+
+        // Arrange
+        var googleUrl = new String("https://www.google.com.br");
+        var assertPageTitle = new String("pizzarias - Google Maps");
+        var searchTerm = new String("pizzarias");
+        var googleSection = new String("Maps");
+
+        // Act:
+        // Acesso ao site do Google
+        driver.Navigate().GoToUrl(googleUrl);
+
+        // Insere o termo de busca no campo de pesquisa
+        driver.FindElement(By.Name("q")).SendKeys(searchTerm);
+
+        // Aciona a busca
+        driver.FindElement(By.Name("q")).SendKeys(Keys.Enter);
+
+        // Clique na aba do Maps
+        driver.FindElement(By.LinkText(googleSection)).Click();
+
+        // Assert
+        Assert.Contains(assertPageTitle, driver.Title);
+    }
 }
