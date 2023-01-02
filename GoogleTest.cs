@@ -139,8 +139,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("quantos anos tem o brasil");
-        var searchTerm = new String("quantos anos tem o brasil");
+        var assertPageTitle = new String("Idade do Brasil");
+        var searchTerm = new String("Idade do Brasil");
 
         // Act:
         // Acesso ao site do Google
@@ -162,8 +162,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("tempo rio de janeiro");
-        var searchTerm = new String("tempo rio de janeiro");
+        var assertPageTitle = new String("Tempo rio de janeiro");
+        var searchTerm = new String("Tempo rio de janeiro");
 
         // Act:
         // Acesso ao site do Google
@@ -185,8 +185,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("pizzarias - Google Maps");
-        var searchTerm = new String("pizzarias");
+        var assertPageTitle = new String("Pizzarias - Google Maps");
+        var searchTerm = new String("Pizzarias");
         var googleSection = new String("Maps");
 
         // Act:

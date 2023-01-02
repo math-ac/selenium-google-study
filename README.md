@@ -140,3 +140,18 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 </details>
 
 ---
+
+<details>
+<summary><b>Um fato sobre o Brasil</b></summary>
+
+**Termo de busca:** Idade do Brasil
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam, através do [trechos em destque](https://support.google.com/websearch/answer/9351707?hl=pt-BR&visit_id=638081678425563889-263788092&p=featured_snippets&rd=1) o tempo que a Independência do Brasil tem, e não quantos anos desde seu descobrimento.
+
+**Críticas:** Inconsistência na apresentação de resultados com termos de busca similares, já que o termo de busca "Idade Brasil" apresenta a idade do Brasil. 
+
+**Possíveis melhorias:** Manter a consistência do resultado para termos de busca similares.
+
+</details>
+
+---
