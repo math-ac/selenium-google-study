@@ -116,8 +116,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("letra de john mayer neon");
-        var searchTerm = new String("letra de john mayer neon");
+        var assertPageTitle = new String("Letra de john mayer neon");
+        var searchTerm = new String("Letra de john mayer neon");
 
         // Act:
         // Acesso ao site do Google

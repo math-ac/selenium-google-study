@@ -125,3 +125,18 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 </details>
 
 ---
+
+<details>
+<summary><b>Letra de uma música</b></summary>
+
+**Termo de busca:** Letra de john mayer neon
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam a letra completa da música, além de links para escutá-la e informações sobre a música.
+
+**Críticas:** A apresentação do resultado pode variar de acordo com os termos digitados, mesmo eles sendo bem similares ("neon letra" sendo um exemplo), deixando de apresentar os links e informações da música. 
+
+**Possíveis melhorias:** Manter a consistência do resultado para termos de busca similares.
+
+</details>
+
+---
