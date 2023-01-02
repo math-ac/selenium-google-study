@@ -33,7 +33,7 @@ Para verificar se o projeto foi criado corretamente, execute o teste com:
 dotnet test
 ```
 
-Uma mensagem de resposta deve aparecer
+Uma mensagem de resposta deve aparecer:
 
 ```
 Iniciando execução de teste, espere...
