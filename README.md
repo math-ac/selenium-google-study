@@ -185,3 +185,7 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 </details>
 
 ---
+
+## Considerações Finais
+
+Apesar de alguns resultados obtidos não apresentarem consistências entre termos de busca similares, de maneira geral, a usabilidade do Google é satisfatória, uma vez que é possível obter a informação que se procura apenas com o resultado da pesquisa, sem a necessidade de acessar sites de terceiros. Obviamente, isso é aplicável para informações simples e diretas. Outro ponto importante é que os resultados obtidos podem variar entre usuários, dependendo de sua localidade.
