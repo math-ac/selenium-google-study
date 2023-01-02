@@ -170,3 +170,18 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 </details>
 
 ---
+
+<details>
+<summary><b>Pizzarias locais</b></summary>
+
+**Termo de busca:** Pizzarias
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam as pizzarias próximas, assim como informações sobre pizza.
+
+**Críticas:** Um desperdício de espaço para exibir infomações sobre pizza, que é relacionado a busca, mas não é relevante. Além disso, esse campo não é apresentado caso a busca seja feito com o termo "Pizzarias próximas".
+
+**Possíveis melhorias:** Manter a consistência do resultado para termos de busca similares.
+
+</details>
+
+---
