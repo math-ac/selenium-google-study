@@ -120,7 +120,7 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 
 **Críticas:** O resultado é um tanto satisfatório, mas uma vez que o usuário pode ter preferência por algum site de notícia específico, o campo de "Principais Notícias" pode ficar no caminho. 
 
-**Possíveis melhorias:** Talvez aumentar a quantidade apresentada pelo campo "Principais Notícias" e mudar o seu layout.
+**Possíveis melhorias:** Aumentar a quantidade apresentada pelo campo "Principais Notícias" e mudar o seu layout.
 
 </details>
 
@@ -151,6 +151,21 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 **Críticas:** Inconsistência na apresentação de resultados com termos de busca similares, já que o termo de busca "Idade Brasil" apresenta a idade do Brasil. 
 
 **Possíveis melhorias:** Manter a consistência do resultado para termos de busca similares.
+
+</details>
+
+---
+
+<details>
+<summary><b>Clima de uma cidade</b></summary>
+
+**Termo de busca:** Tempo rio de janeiro
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam a previsão do tempo para a cidade do Rio de Janeiro e até mesmo alertas meteorológicos.
+
+**Críticas:** Não foi observado nenhum problema no resultado obtido.
+
+**Possíveis melhorias:** Aproveitar o espaço ao lado do grafíco com alguma informação relevante ou até mesmo aumentá-lo.
 
 </details>
 
