@@ -35,8 +35,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("Cachorro");
-        var searchTerm = new String("Cachorro");
+        var assertPageTitle = new String("Imagens de cachorros");
+        var searchTerm = new String("Imagens de cachorro");
         var googleSection = new String("Imagens");
 
         // Act:

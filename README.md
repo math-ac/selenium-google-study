@@ -67,13 +67,46 @@ dotnet test
 
 ## Análise de Usabilidade
 
-Com a automação de diferentes buscas, pode-se ter avaliar a usabilidade que a busca do Gooogle oferece. As buscas efetuadas foram:
+Com a automação de diferentes buscas, pôde-se avaliar a usabilidade que a busca do Gooogle oferece. As buscas efetuadas foram:
 
 - Imagens de cachorros
 - Dados de uma ação
 - Notícias em alta sobre o Brasil
-- Letras de uma música
+- Letra de uma música
 - Um fato sobre o Brasil
 - Clima de uma cidade
 - Pizzarias locais
 
+Como o serviço principal do Google é a busca por informação, os testes de automação foram elaborados para serem os mais simples e diretos possíveis, focando apenas nos resultados em que a própria página do Google gera.
+
+### Resultados Obtidos
+
+<details>
+<summary><b>Imagens de cachorros</b></summary>
+
+**Termo de busca:** Imagens de cachorros
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam algumas imagens e como esperado, link para outros sites. A página de resultados apresenta a aba de "Imagens" como segunda opção, o que facilita o encontro de imagens.
+
+**Críticas:** Apesar do resultado da busca apresentar algumas imagens, o usuário deve selecionar a aba de "Imagens" para ter o resultado completo.
+
+**Possíveis melhorias:** O resultado da busca poderia redirecionar o usuário diretamente para a aba de "Imagens" do Google, reduzindo o número de ações necessárias para se encontrar as imagens.
+
+</details>
+
+---
+
+<details>
+<summary><b>Dados de uma ação</b></summary>
+
+**Termo de busca:** ITUB4
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos tem um foco nos dados da ação e só depois, link para outros sites. A página de resultados apresenta a aba de "Finanças" como segunda opção, redirecionando para a página da ação no [Google Finanças](https://www.google.com/finance/).
+
+**Críticas:** Apesar do resultado satisfatório, há uma pequena inconsistência, onde além da aba de "Finanças" há um botão de mesmo nome próximo do resultado, que não redireciona ao site do Google Finanças, apenas aprenta outros dados da ação.
+
+**Possíveis melhorias:** Renomear o botão de "Finanças" próximo ao resultado da busca, para evitar confusão com a aba de "Finanças" do Google.
+
+</details>
+
+---
