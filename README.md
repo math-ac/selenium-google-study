@@ -110,3 +110,18 @@ Como o serviço principal do Google é a busca por informação, os testes de au
 </details>
 
 ---
+
+<details>
+<summary><b>Notícias em alta sobre o Brasil</b></summary>
+
+**Termo de busca:** Notícias Brasil
+
+**Experiência:** Tendo realizado a busca na página inicial do Google, os resultados obtidos apresentam um campo nomeado "Principais Notícias", com as notícias mais relevantes e como esperado, link para outros sites de notícias. A página de resultados apresenta a aba de "Notícias" como segunda opção, o que facilita o encontro de notícias.
+
+**Críticas:** O resultado é um tanto satisfatório, mas uma vez que o usuário pode ter preferência por algum site de notícia específico, o campo de "Principais Notícias" pode ficar no caminho. 
+
+**Possíveis melhorias:** Talvez aumentar a quantidade apresentada pelo campo "Principais Notícias" e mudar o seu layout.
+
+</details>
+
+---

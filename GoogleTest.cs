@@ -89,8 +89,8 @@ public class GoogleTest : IDisposable {
 
         // Arrange
         var googleUrl = new String("https://www.google.com.br");
-        var assertPageTitle = new String("Brasil");
-        var searchTerm = new String("Brasil");
+        var assertPageTitle = new String("Notícias Brasil");
+        var searchTerm = new String("Notícias Brasil");
         var googleSection = new String("Notícias");
 
         // Act:
