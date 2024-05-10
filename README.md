@@ -1,4 +1,4 @@
-# Case Técnico Concert
+# Estudo de usabilidade Google
 
 Utilização do [.NET](https://dotnet.microsoft.com/pt-br/) em junção com [Selenium](https://www.selenium.dev/) para automatização da página do [Google](https://google.com).
 
