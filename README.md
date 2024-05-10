@@ -56,7 +56,7 @@ Adicionalmente, é necessário obter o driver para o navegador que se deseja aut
 Para reprodução dos testes deste repositório, tendo preparado o ambiente, clone o projeto:
 
 ```
-git clone https://github.com/math-ac/concert-case
+git clone https://github.com/math-ac/selenium-google-study
 ```
 
 Dentro da pasta do projeto execute o comando:
